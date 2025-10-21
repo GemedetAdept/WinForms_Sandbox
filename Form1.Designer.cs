@@ -76,6 +76,8 @@
 			// 
 			// pictureBox1
 			// 
+			pictureBox1.BackColor=SystemColors.Window;
+			pictureBox1.BorderStyle=BorderStyle.FixedSingle;
 			pictureBox1.Location=new Point(8, 123);
 			pictureBox1.MaximumSize=new Size(256, 256);
 			pictureBox1.MinimumSize=new Size(256, 256);

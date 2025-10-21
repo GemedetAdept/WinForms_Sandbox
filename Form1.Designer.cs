@@ -32,6 +32,7 @@
 			inputTextBox=new TextBox();
 			buttonAdd=new Button();
 			pictureBox1=new PictureBox();
+			buttonPaint=new Button();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
 			// 
@@ -80,11 +81,22 @@
 			pictureBox1.TabStop=false;
 			pictureBox1.Paint+=pictureBox1_Paint;
 			// 
+			// buttonPaint
+			// 
+			buttonPaint.Location=new Point(221, 235);
+			buttonPaint.Name="buttonPaint";
+			buttonPaint.Size=new Size(75, 23);
+			buttonPaint.TabIndex=6;
+			buttonPaint.Text="Paint";
+			buttonPaint.UseVisualStyleBackColor=true;
+			buttonPaint.Click+=buttonPaint_Click;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions=new SizeF(7F, 15F);
 			AutoScaleMode=AutoScaleMode.Font;
 			ClientSize=new Size(560, 270);
+			Controls.Add(buttonPaint);
 			Controls.Add(pictureBox1);
 			Controls.Add(buttonAdd);
 			Controls.Add(inputTextBox);
@@ -104,5 +116,6 @@
 		private TextBox inputTextBox;
 		private Button buttonAdd;
 		private PictureBox pictureBox1;
+		private Button buttonPaint;
 	}
 }

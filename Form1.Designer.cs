@@ -33,6 +33,8 @@
 			buttonAdd=new Button();
 			pictureBox1=new PictureBox();
 			buttonPaint=new Button();
+			hexInput=new TextBox();
+			hexPrefix=new Label();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
 			// 
@@ -93,11 +95,31 @@
 			buttonPaint.UseVisualStyleBackColor=true;
 			buttonPaint.Click+=buttonPaint_Click;
 			// 
+			// hexInput
+			// 
+			hexInput.Location=new Point(115, 246);
+			hexInput.MaxLength=6;
+			hexInput.Name="hexInput";
+			hexInput.Size=new Size(100, 23);
+			hexInput.TabIndex=7;
+			// 
+			// hexPrefix
+			// 
+			hexPrefix.AutoSize=true;
+			hexPrefix.Font=new Font("Segoe UI", 11F);
+			hexPrefix.Location=new Point(100, 248);
+			hexPrefix.Name="hexPrefix";
+			hexPrefix.Size=new Size(18, 20);
+			hexPrefix.TabIndex=8;
+			hexPrefix.Text="#";
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions=new SizeF(96F, 96F);
 			AutoScaleMode=AutoScaleMode.Dpi;
 			ClientSize=new Size(560, 270);
+			Controls.Add(hexPrefix);
+			Controls.Add(hexInput);
 			Controls.Add(buttonPaint);
 			Controls.Add(pictureBox1);
 			Controls.Add(buttonAdd);
@@ -119,5 +141,7 @@
 		private Button buttonAdd;
 		private PictureBox pictureBox1;
 		private Button buttonPaint;
+		private TextBox hexInput;
+		private Label hexPrefix;
 	}
 }

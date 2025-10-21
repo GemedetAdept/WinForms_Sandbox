@@ -1,3 +1,5 @@
+using System.Drawing;
+
 namespace WinForms_Sandbox
 {
 	public partial class Form1 : Form {
@@ -22,13 +24,19 @@ namespace WinForms_Sandbox
 		private void pictureBox1_Paint(object sender, PaintEventArgs e) {
 			Graphics graphics = e.Graphics;
 
-			SolidBrush brushMediumTurqoise = new SolidBrush(Color.MediumTurquoise);
-			int posX = 0;
-			int posY = 0;
-			int width = pictureBox1.Width;
-			int height = pictureBox1.Height;
+			string hexColor = hexInput.Text;
 
-			e.Graphics.FillRectangle(brushMediumTurqoise, posX, posY, width, height);
+			if (!string.IsNullOrWhiteSpace(hexColor)) {
+				Color inputColor = ColorTranslator.FromHtml("#" + hexColor);
+
+				SolidBrush inputBrush = new SolidBrush(inputColor);
+				int posX = 0;
+				int posY = 0;
+				int width = pictureBox1.Width;
+				int height = pictureBox1.Height;
+
+				e.Graphics.FillRectangle(inputBrush, posX, posY, width, height);
+			}
 		}
 
 		private void buttonPaint_Click(object sender, EventArgs e) {

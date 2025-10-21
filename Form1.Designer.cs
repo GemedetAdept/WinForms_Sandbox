@@ -26,62 +26,74 @@
 		///  Required method for Designer support - do not modify
 		///  the contents of this method with the code editor.
 		/// </summary>
-		private void InitializeComponent()
-		{
-			outputList = new ListBox();
-			sandboxLabel = new Label();
-			inputTextBox = new TextBox();
-			buttonAdd = new Button();
+		private void InitializeComponent() {
+			outputList=new ListBox();
+			sandboxLabel=new Label();
+			inputTextBox=new TextBox();
+			buttonAdd=new Button();
+			pictureBox1=new PictureBox();
+			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
 			// 
 			// outputList
 			// 
-			outputList.FormattingEnabled = true;
-			outputList.ItemHeight = 15;
-			outputList.Location = new Point(8, 23);
-			outputList.Name = "outputList";
-			outputList.Size = new Size(120, 94);
-			outputList.TabIndex = 1;
+			outputList.FormattingEnabled=true;
+			outputList.ItemHeight=15;
+			outputList.Location=new Point(8, 23);
+			outputList.Name="outputList";
+			outputList.Size=new Size(120, 94);
+			outputList.TabIndex=1;
 			// 
 			// sandboxLabel
 			// 
-			sandboxLabel.AutoSize = true;
-			sandboxLabel.Location = new Point(12, 5);
-			sandboxLabel.Name = "sandboxLabel";
-			sandboxLabel.Size = new Size(83, 15);
-			sandboxLabel.TabIndex = 2;
-			sandboxLabel.Text = "Sandbox Input";
+			sandboxLabel.AutoSize=true;
+			sandboxLabel.Location=new Point(12, 5);
+			sandboxLabel.Name="sandboxLabel";
+			sandboxLabel.Size=new Size(83, 15);
+			sandboxLabel.TabIndex=2;
+			sandboxLabel.Text="Sandbox Input";
 			// 
 			// inputTextBox
 			// 
-			inputTextBox.Location = new Point(134, 23);
-			inputTextBox.Name = "inputTextBox";
-			inputTextBox.Size = new Size(100, 23);
-			inputTextBox.TabIndex = 3;
-			inputTextBox.KeyDown += inputTextBox_KeyDown;
+			inputTextBox.Location=new Point(134, 23);
+			inputTextBox.Name="inputTextBox";
+			inputTextBox.Size=new Size(100, 23);
+			inputTextBox.TabIndex=3;
+			inputTextBox.KeyDown+=inputTextBox_KeyDown;
 			// 
 			// buttonAdd
 			// 
-			buttonAdd.Location = new Point(148, 52);
-			buttonAdd.Name = "buttonAdd";
-			buttonAdd.Size = new Size(75, 23);
-			buttonAdd.TabIndex = 4;
-			buttonAdd.Text = "Add";
-			buttonAdd.UseVisualStyleBackColor = true;
-			buttonAdd.Click += buttonAdd_Click;
+			buttonAdd.Location=new Point(148, 52);
+			buttonAdd.Name="buttonAdd";
+			buttonAdd.Size=new Size(75, 23);
+			buttonAdd.TabIndex=4;
+			buttonAdd.Text="Add";
+			buttonAdd.UseVisualStyleBackColor=true;
+			buttonAdd.Click+=buttonAdd_Click;
+			// 
+			// pictureBox1
+			// 
+			pictureBox1.Location=new Point(302, 12);
+			pictureBox1.Name="pictureBox1";
+			pictureBox1.Size=new Size(246, 246);
+			pictureBox1.TabIndex=5;
+			pictureBox1.TabStop=false;
+			pictureBox1.Paint+=pictureBox1_Paint;
 			// 
 			// Form1
 			// 
-			AutoScaleDimensions = new SizeF(7F, 15F);
-			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(560, 270);
+			AutoScaleDimensions=new SizeF(7F, 15F);
+			AutoScaleMode=AutoScaleMode.Font;
+			ClientSize=new Size(560, 270);
+			Controls.Add(pictureBox1);
 			Controls.Add(buttonAdd);
 			Controls.Add(inputTextBox);
 			Controls.Add(sandboxLabel);
 			Controls.Add(outputList);
-			Margin = new Padding(2);
-			Name = "Form1";
-			Text = "WinForms Sandbox";
+			Margin=new Padding(2);
+			Name="Form1";
+			Text="WinForms Sandbox";
+			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -91,5 +103,6 @@
 		private Label sandboxLabel;
 		private TextBox inputTextBox;
 		private Button buttonAdd;
+		private PictureBox pictureBox1;
 	}
 }

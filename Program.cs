@@ -1,3 +1,5 @@
+using System.Drawing;
+
 namespace WinForms_Sandbox
 {
     internal static class Program
@@ -12,6 +14,6 @@ namespace WinForms_Sandbox
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
-        }
+		}
     }
 }

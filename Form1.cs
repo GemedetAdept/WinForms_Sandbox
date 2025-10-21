@@ -6,5 +6,12 @@ namespace WinForms_Sandbox
         {
             InitializeComponent();
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(inputTextBox.Text) && !outputList.Items.Contains(inputTextBox.Text) {
+                outputList.Items.Add(inputTextBox.Text);
+            }
+        }
     }
 }

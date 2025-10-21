@@ -75,15 +75,17 @@
 			// pictureBox1
 			// 
 			pictureBox1.Location=new Point(302, 12);
+			pictureBox1.MaximumSize=new Size(256, 256);
+			pictureBox1.MinimumSize=new Size(256, 256);
 			pictureBox1.Name="pictureBox1";
-			pictureBox1.Size=new Size(246, 246);
+			pictureBox1.Size=new Size(256, 256);
 			pictureBox1.TabIndex=5;
 			pictureBox1.TabStop=false;
 			pictureBox1.Paint+=pictureBox1_Paint;
 			// 
 			// buttonPaint
 			// 
-			buttonPaint.Location=new Point(221, 235);
+			buttonPaint.Location=new Point(221, 245);
 			buttonPaint.Name="buttonPaint";
 			buttonPaint.Size=new Size(75, 23);
 			buttonPaint.TabIndex=6;
@@ -93,8 +95,8 @@
 			// 
 			// Form1
 			// 
-			AutoScaleDimensions=new SizeF(7F, 15F);
-			AutoScaleMode=AutoScaleMode.Font;
+			AutoScaleDimensions=new SizeF(96F, 96F);
+			AutoScaleMode=AutoScaleMode.Dpi;
 			ClientSize=new Size(560, 270);
 			Controls.Add(buttonPaint);
 			Controls.Add(pictureBox1);

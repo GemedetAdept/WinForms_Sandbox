@@ -27,7 +27,7 @@ namespace WinForms_Sandbox
 			string hexColor = hexInput.Text;
 
 			if (!string.IsNullOrWhiteSpace(hexColor)) {
-				Color inputColor = ColorTranslator.FromHtml("#" + hexColor);
+				Color inputColor = ColorTranslator.FromHtml("#"+hexColor);
 
 				SolidBrush inputBrush = new SolidBrush(inputColor);
 				int posX = 0;
@@ -41,6 +41,10 @@ namespace WinForms_Sandbox
 
 		private void buttonPaint_Click(object sender, EventArgs e) {
 			pictureBox1.Refresh();
+		}
+
+		private void Form1_Load(object sender, EventArgs e) {
+
 		}
 	}
 }

@@ -89,7 +89,7 @@
 			// 
 			// buttonPaint
 			// 
-			buttonPaint.Location=new Point(284, 152);
+			buttonPaint.Location=new Point(294, 152);
 			buttonPaint.Name="buttonPaint";
 			buttonPaint.Size=new Size(100, 23);
 			buttonPaint.TabIndex=6;
@@ -99,7 +99,7 @@
 			// 
 			// hexInput
 			// 
-			hexInput.Location=new Point(284, 123);
+			hexInput.Location=new Point(294, 123);
 			hexInput.MaxLength=6;
 			hexInput.Name="hexInput";
 			hexInput.Size=new Size(100, 23);
@@ -114,6 +114,7 @@
 			hexPrefix.Size=new Size(18, 20);
 			hexPrefix.TabIndex=8;
 			hexPrefix.Text="#";
+			hexPrefix.TextAlign=ContentAlignment.MiddleCenter;
 			// 
 			// Form1
 			// 

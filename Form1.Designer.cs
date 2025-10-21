@@ -76,7 +76,7 @@
 			// 
 			// pictureBox1
 			// 
-			pictureBox1.Location=new Point(302, 12);
+			pictureBox1.Location=new Point(8, 123);
 			pictureBox1.MaximumSize=new Size(256, 256);
 			pictureBox1.MinimumSize=new Size(256, 256);
 			pictureBox1.Name="pictureBox1";
@@ -87,9 +87,9 @@
 			// 
 			// buttonPaint
 			// 
-			buttonPaint.Location=new Point(221, 245);
+			buttonPaint.Location=new Point(284, 152);
 			buttonPaint.Name="buttonPaint";
-			buttonPaint.Size=new Size(75, 23);
+			buttonPaint.Size=new Size(100, 23);
 			buttonPaint.TabIndex=6;
 			buttonPaint.Text="Paint";
 			buttonPaint.UseVisualStyleBackColor=true;
@@ -97,7 +97,7 @@
 			// 
 			// hexInput
 			// 
-			hexInput.Location=new Point(115, 246);
+			hexInput.Location=new Point(284, 123);
 			hexInput.MaxLength=6;
 			hexInput.Name="hexInput";
 			hexInput.Size=new Size(100, 23);
@@ -107,7 +107,7 @@
 			// 
 			hexPrefix.AutoSize=true;
 			hexPrefix.Font=new Font("Segoe UI", 11F);
-			hexPrefix.Location=new Point(100, 248);
+			hexPrefix.Location=new Point(270, 126);
 			hexPrefix.Name="hexPrefix";
 			hexPrefix.Size=new Size(18, 20);
 			hexPrefix.TabIndex=8;
@@ -117,7 +117,7 @@
 			// 
 			AutoScaleDimensions=new SizeF(96F, 96F);
 			AutoScaleMode=AutoScaleMode.Dpi;
-			ClientSize=new Size(560, 270);
+			ClientSize=new Size(1008, 561);
 			Controls.Add(hexPrefix);
 			Controls.Add(hexInput);
 			Controls.Add(buttonPaint);

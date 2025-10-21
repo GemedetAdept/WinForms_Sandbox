@@ -9,7 +9,7 @@ namespace WinForms_Sandbox
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(inputTextBox.Text) && !outputList.Items.Contains(inputTextBox.Text) {
+            if (!string.IsNullOrWhiteSpace(inputTextBox.Text) && !outputList.Items.Contains(inputTextBox.Text)) {
                 outputList.Items.Add(inputTextBox.Text);
             }
         }
